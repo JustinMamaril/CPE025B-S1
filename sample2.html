@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLOPS College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-image: url("C:\Users\admin\Downloads\CPE025B-S1\Module_4\building.jpg"); /* Replace 'header-bg.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #007bff; /* Fallback color if image doesn't load */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 123, 255, 0.5); /* Blue overlay with 50% opacity; adjust as needed */
+            z-index: 1;
+        }
+        header img, header h1, header p {
+            position: relative;
+            z-index: 2; /* Ensures text and logo are above the overlay */
+        }
+        header img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            justify-content: center;
+            display: flex; 
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 100px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .tabcontent {
+            display: none;
+            padding: 100px;
+            background-color: white;
+            margin: 100px;
+            border-radius: 100px;
+        }
+        .tabcontent:target {
+            display: block;
+        }
+        #Home:target, #Home:not(:target) ~ #Home {
+            display: block;
+        }
+        .section {
+            margin-bottom: 20px; 
+        }
+        /* Form Styles */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\logo2.png" alt="School Logo">
+    <h1>Welcome to Our Lady Of Perpetual Succor College</h1>
+    <p>Marikina City, Philippines</p>
+</header>
+
+<nav>
+    <a href="#Home">Home</a>
+    <a href="#Announcements">Announcements</a>
+    <a href="#Contact">Contact Us</a>
+</nav>
+
+<div id="Home" class="tabcontent">
+    <div class="section">
+    <hr>
+        <center>
+            <h2>About Us</h2>
+            <h3>Marikina’s Home of Holistic, Values-Based Education Since 1978</h3>
+            <p>Since 1978, OLOPSC has been at the heart of Marikina’s educational landscape, offering values-driven, 
+                future-ready education from preschool to college.</p>
+            <p>Grounded in our core values of Spirituality, Responsibility, Integrity, Caring Culture, and Excellence (S-RICE), 
+                we are committed to nurturing well-rounded individuals prepared to thrive in a dynamic world.</p>
+            <video controls>
+                <source src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\olopsc_tour.mp4" type="video/mp4"> 
+                Your browser does not support the video element.
+            </video>
+    </hr>
+        </center>
+    </div>
+    
+<hr>
+    <div class="section">
+        <center>
+        <h2>Vision</h2>
+        <p>We envision OLOPSC as a premier caring educational institution committed to the development of a progressive and peaceful society by developing its graduates to be of good character, 
+            responsible stewards of God’s gifts, and empowered and enabled for the future.</p>
+        <h2>Mission</h2>
+        <p>We are committed to providing relevant, quality and holistic education by:</p>
+        </center>
+        <ul>
+            <li>creating an academic environment that stimulates love for learning and provides opportunities for the application of learning in an ever-evolving world;</li>
+            <li>nurturing God-loving individuals with Marian virtues and spirituality;</li>
+            <li>instilling love of country, pride in our identity and cultural heritage;</li>
+            <li>fostering deep awareness, behavioral changes and active engagement in practices towards sustainable development;</li>
+            <li>developing leadership with a heart for service; and</li>
+            <li>empowering and enabling learners to be future-ready</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <center>
+            <img src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\building.jpg" width="800" alt="School Building"> 
+        </center>
+    </div>
+</hr>
+
+<hr>
+    <div class="section">
+        <center>
+        <h3>our core values is s-rice which stands for:</h3>
+        <h1>Spirituality</h1>
+        <h1>Responsibility and Respect</h1>
+        <h1>Integrity</h1>
+        <h1>Caring Culture; and,</h1>
+        <h1>Excellence</h1>
+        </center>
+    </div>
+</hr>
+</div>
+
+<div id="Announcements" class="tabcontent">
+<center>
+    <h1>Announcements</h1>
+</center>
+<hr>
+    <h3>Everyone is welcome every Sunday at the OLOPS College Chapel for the celebration of the Holy Mass. 💛</h3>
+    <center>
+    <img src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\holy_mass.jpg" width="400" alt="Holy Mass"> 
+    </center>
+</hr>
+
+<hr>
+    <h3>𝐀𝐃𝐌𝐈𝐒𝐒𝐈𝐎𝐍𝐒 𝟐𝟎𝟐𝟔 📢</h3>
+    <p>Please be informed of the Schedule of Assessment for Student Applicants for School Year 2026–2027.</p>
+    <p>🗓 January 31 | Saturday</p>
+    <p>⏰ Batch 1: 8:00 a.m.</p>
+    <p>⏰ Batch 2: 10:00 a.m.</p>
+    <p>Applicants are encouraged to visit the Admissions Office on or before January 31 to apply for admission.
+    Walk-in applicants on the day of the assessment are encouraged to arrive at least 30 minutes before the scheduled examination.</p>
+    <p>For inquiries, please message us through this page 💬</p>
+
+    <center>
+    <img src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\admissions.jpg" width="400" alt="Holy Mass">
+    </center>
+    </hr>
+
+<hr>
+    <h3>Guess who’s going to be the newest member of the OLOPSC family? 👀</h3>
+    <center>
+    <img src="C:\Users\admin\Downloads\CPE025B-S1\Module_4\mascot.jpg" width="400" alt="Holy Mass">
+    </center>
+</hr>
+
+<hr>
+<center>
+    <h2>More announcement on our facebook page!</h2>
+    <p>Follow us to be updated!</p>
+    <h2><a href="https://web.facebook.com/olopsc.official">Facebook</a></h2>
+</center>
+</hr>
+</div>
+
+<div id="Contact" class="tabcontent">
+    <h2>Contact Us</h2>
+    <p>Address: Gen. Ordoñez St., Concepcion Uno, Marikina City, Philippines 1807</p>
+    <p>Phone: (+63) 992-259-925</p>
+    <p>Email: info@school.com</p>
+    <p>Follow us on social media for updates!</p>
+<h2><a href="https://web.facebook.com/olopsc.official">Facebook</a></h2>
+
+    
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+        
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
