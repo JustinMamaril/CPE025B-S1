@@ -1,0 +1,62 @@
+/* Styles for the header section */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Styles for the navigation menu */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .nav li {
+    list-style: none;
+    margin-right: 15px;
+  }
+  
+  /* Styles for the main content */
+  .main-content {
+    font-size: 40px;
+    line-height: 1.5;
+    padding: 20px;
+  }
+  
+  /* Styles for the footer section */
+  .footer {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: green;
+  }
+
+  p {
+  font-size: 16px;
+  color: blue;
+  }
+
+  .button {
+    background-color: blue;
+    color: white;
+
+  }#header {
+    font-size: 24px;
+    color: green;
+  }
+
+  .parent {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  .heading {
+    color: blue !important;
+  }

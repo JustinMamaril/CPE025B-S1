@@ -1,0 +1,62 @@
+h1 {
+    color: rgb(0, 128, 0); /* Dark Green using RGB */
+  }
+  
+  p {
+    color: #FF5733; /* Bright Orange using HEX */
+  }
+  
+  .vivid {
+    color: hsl(210, 100%, 50%); /* Vivid Blue using HSL */
+  }
+  
+  a {
+    color: pink; /* Pink color using named color */
+  }
+
+  body {
+    background-color: lightblue;
+  }
+
+  .box {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #000000;
+    overflow: scroll; /* Adds a scrollbar to the box if its content overflows. */
+    background-image: url("https://edube.org/uploads/media/default/0001/03/eodg_grey_fav.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .header {
+    background-image: url("https://edube.org/uploads/media/default/0001/03/sunflowers_sunset_full.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+  }
+
+  ul {
+    list-style-type: square; /* Changes bullets to squares */
+    list-style-position: inside;
+    list-style-image: url('https://edube.org/uploads/media/default/0001/04/oedg_icon_regular.png');
+  }
+
+  a:link {
+    text-decoration: none; /* Remove underline */
+    color: pink;
+  }
+  /* Link when hovered */
+a:hover {
+    color: #FF0000; /* Changes color to red */
+    background-color: #F0F0F0; /* Adds a light gray background */
+    text-decoration: none; /* Removes underline */
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 80%;
+  }

@@ -1,0 +1,55 @@
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+.container {
+    overflow: hidden; /* Clearing floats */
+}
+
+.grid-item {
+    float: left; /* Float items to align side by side */
+    width: 50%; /* 2 columns, hence 50% width */
+    box-sizing: border-box; /* Includes padding and border in width calculation */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item {
+        width: 100%; /* Stack items vertically on smaller screens */
+    }
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        float: none;
+    }
+}
+
+.column {
+    float: left; /* Align columns side by side */
+    padding: 10px;
+}
+
+.large {
+    width: 50%; /* Large column takes half of the container's width */
+}
+
+.medium {
+    width: 30%; /* Medium column takes 30% of the container's width */
+}
+
+.small {
+    width: 20%; /* Small column takes 20% of the container's width */
+}
