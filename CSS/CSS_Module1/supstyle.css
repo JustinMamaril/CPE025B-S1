@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+nav {
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.tabcontent {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    margin-top: 30px;     /* controls the gap you circled */
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.tabcontent:target {
+    display: block;
+}
+
+.container {
+ max-width: 1500px;
+ margin: 100px;
+ padding: 0 20px;
+ width: auto;
+ overflow: hidden; 
+}
+
+.section {
+ background-color: #f9f5f0;
+ padding: 50px;
+ border-radius: 80px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+ margin-bottom: 50px;
+}
+
+a[href^="mailto:"] {
+    color: blue;
+}
+
+.img1{
+    width: 80px;
+}
+
+.img2 {
+    float: right;
+    max-width: 60%;     
+    height: auto;
+    margin-left: 20px;
+}
+
+.img3 {
+    float: left;
+    max-width: 60%;     
+    height: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.container img {
+  object-fit: contain;
+  max-width: 500px;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.7;      /* space between lines */
+    margin-bottom: 20px;  /* space between paragraphs */
+    color: #333;
+}
