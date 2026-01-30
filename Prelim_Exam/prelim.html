@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MLBB Survey Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2c3e50;
+}
+
+h1 {
+    font-size:30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#f9f5f0;
+}
+
+.info{
+    color:#f9f5f0;
+    font-size: 25px;
+}
+
+label, button, option, select{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+    font-family:'Gill Sans MT';
+    font-size: 25px;
+}
+
+.tabcontent {
+    display: none;
+    padding: 30px;
+    background-color: white;
+    margin-top: 30px;   
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+.container {
+ max-width: 1500px;
+ margin-top: 30px;   
+ margin-left: 500px;
+ margin-right: 500px;
+ margin-bottom: 50px;
+ padding: 0 50px;
+ width: auto;
+ overflow: hidden; 
+}
+
+.section {
+ background-color: #f9f5f0;
+ padding: 50px;
+ border-radius: 80px;
+ box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+ margin-bottom: 20px;
+}
+
+.button {
+    background-color: bisque;
+}
+
+
+</style>
+</head>
+
+<body>
+    
+<center>
+    <h1 id="header">Your Rank in Mobile Legends Survey Form</h1>
+    <p id="info" class="info">This survey ask regarding your rank in Mobile Legends</p>
+</center>
+
+<div class ="container section">
+    <form id="survey-form">
+        <label for="name-label">IGN (In Game Name):</label>
+        <input id="name" type="text" name="name" placeholder ="Enter your IGN" required>
+    <br><br>
+
+        <label for="email-label">Email:</label>
+        <input id="email" type="email" name="email" placeholder ="Enter your email" required>
+    <br><br>   
+
+        <label for="number-label">In Game ID:</label>
+        <input id="IDnum" type="number" name="IDnum" min="0" max="10000000" placeholder ="Enter your ID" required>
+    <br><br>
+</div>
+
+<div class ="container section">
+    <label id="dropdown" for="dropdown">What is your current Rank?</label><br>
+    <center>
+    <select id="dropdown" name="dropdown" required>
+        <option value="Rank">Select your Rank</option>
+        <option value="Warrior">Warrior</option>
+        <option value="Elite">Elite</option>
+        <option value="Master">Master</option>
+        <option value="GrandMaster">Grand Master</option>
+        <option value="Epic">Epic</option>
+        <option value="Legend">Legend</option>
+        <option value="Mythic">Mythic</option>
+        <option value="MythicalHonor">Mythical Honor</option>
+        <option value="MythicalImmortal">Mythical Immortal</option>
+    </select>
+    </center>
+</div>
+
+<div class ="container section">
+    <p>Which rank do you play comfortably?</p>
+    <label> <input type="radio" name="ques1" value="lower" required>Lower than my current Rank </label><br>
+    <label> <input type="radio" name="ques1" value="current" required>I play comfortably in my current Rank </label><br>
+    <label> <input type="radio" name="ques1" value="higher" required>Higher than my current Rank </label><br>
+</div>
+
+<div class ="container section">
+    <p>If you want to play on different ranks, which rank would it be? (You can choose multiple)</p>
+    <label> <input type="checkbox" name="ques2" value="Warrior"> Warrior </label><br>
+    <label> <input type="checkbox" name="ques2" value="Elite"> Elite </label><br>
+    <label> <input type="checkbox" name="ques2" value="Master"> Master </label><br>
+    <label> <input type="checkbox" name="ques2" value="Grand Master"> Grand Master </label><br>
+    <label> <input type="checkbox" name="ques2" value="Epic"> Epic </label><br>
+    <label> <input type="checkbox" name="ques2" value="Legend"> Legend </label><br>
+    <label> <input type="checkbox" name="ques2" value="Mythic"> Mythic </label><br>
+    <label> <input type="checkbox" name="ques2" value="Mythical Honor"> Mythical Honor </label><br>
+    <label> <input type="checkbox" name="ques2" value="Mythical Immortal"> Mythical Immortal </label><br>
+    <br><br>
+</div>
+
+<div class ="container section">
+    <center>
+    <label for="comments">Comments for the improvements of our Survey</label><br>
+    <textarea id="comments" name="comments"></textarea><br>
+    </center>
+</div>
+
+    <center>
+    <button id="submit" type="submit">Submit Survey</button>
+    </center>
+    </form>
+
+
+</div>
+</body>
+</html>
