@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneaker Launch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supstyle.css">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('header').classList.add('visible');
+        });
+    </script>
+</head>
+
+<body>
+
+<header>
+    <h1>🔥 Sneaker Drop 2026</h1>
+    <p>Step Into Style. Step Into Comfort.</p>
+</header>
+
+<main>
+
+    <section class="product-intro">
+        <img src="kobe3.jpg"
+             alt="Sneaker"
+             class="product-image">
+
+        <h2>Ultimate Street Sneakers</h2>
+        <p>Inspired by top global brands and designed for everyday comfort.</p>
+
+        <button class="buy-now">Shop Now</button>
+    </section>
+
+    <section class="gallery">
+        <h2>Featured Sneakers</h2>
+
+        <div class="slider">
+
+            <button class="nav prev">&#10094;</button>
+
+            <div class="slides">
+                <img src="puma.jpg" class="slide">
+                <img src="shoes.jpg" class="slide">
+                <img src="samba.jpg" class="slide">
+                <img src="kobe3.jpg" class="slide">
+                <img src="adioda.jpg" class="slide">
+            </div>
+
+            <button class="nav next">&#10095;</button>
+
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Why You'll Love Them</h2>
+
+        <ul>
+            <li class="feature-item">👟 Lightweight breathable mesh</li>
+            <li class="feature-item">⚡ Shock-absorbing sole technology</li>
+            <li class="feature-item">🎨 Multiple colorways</li>
+            <li class="feature-item">💪 Durable rubber outsole</li>
+            <li class="feature-item">🔥 Streetwear & sport ready</li>
+        </ul>
+    </section>
+
+
+    <section class="brands">
+        <h2>Popular Styles Inspired By</h2>
+        <div class="brand-list">
+            <div class="brand-card">Nike Style</div>
+            <div class="brand-card">Adidas Style</div>
+            <div class="brand-card">Puma Style</div>
+            <div class="brand-card">Running Series</div>
+            <div class="brand-card">Basketball Series</div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Sneaker Launch. All rights reserved.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    const slides = document.querySelector('.slides');
+    const slide = document.querySelectorAll('.slide');
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
+
+    let index = 0;
+
+    next.addEventListener('click', () => {
+        index++;
+        if(index >= slide.length) index = 0;
+        updateSlide();
+    });
+
+    prev.addEventListener('click', () => {
+        index--;
+        if(index < 0) index = slide.length - 1;
+        updateSlide();
+    });
+
+    function updateSlide(){
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+});
+</script>
+
+</body>
+</html>
