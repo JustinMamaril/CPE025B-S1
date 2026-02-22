@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sass Essentials</title>
+  <link rel="stylesheet" href="supstyle.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">S</div>
+        <div>
+          <h1>Welcome to Sass Essentials</h1>
+          <p class="tagline">Write cleaner CSS with variables, mixins, and nesting.</p>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#example">Example</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h2>Make your CSS faster to write and easier to maintain.</h2>
+          <p>
+            Sass helps you organize styles using <strong>variables</strong>, reusable <strong>mixins</strong>,
+            and clean <strong>nesting</strong>.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">See Features</a>
+            <a class="btn btn-ghost" href="#contact">Try the Demo</a>
+          </div>
+
+          <div class="stats" aria-label="Quick highlights">
+            <div class="stat">
+              <div class="stat-num">3</div>
+              <div class="stat-label">Core skills</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">1</div>
+              <div class="stat-label">Sass file</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Reusable styles</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Mini example preview">
+          <h3>Mini Preview</h3>
+          <p class="example-text">This text uses a mixin + lightened color.</p>
+          <ul class="feature-list">
+            <li>Variables keep colors consistent</li>
+            <li>Mixins reduce repetition</li>
+            <li>Nesting matches your HTML</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+
+    <section class="about" id="about">
+      <h2>About Sass</h2>
+      <p>
+        Sass makes CSS more powerful with features like variables, mixins, and nesting. It helps you keep your code clean,
+        reusable, and easier to update.
+      </p>
+      <div class="chip-row" aria-label="Topics">
+        <span class="chip">Variables</span>
+        <span class="chip">Mixins</span>
+        <span class="chip">Nesting</span>
+        <span class="chip">Functions</span>
+      </div>
+    </section>
+
+
+    <section class="features" id="features">
+      <div class="section-head">
+        <h2>Features</h2>
+        <p class="muted">These are the basics you’ll use most often.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Variables</h3>
+          <p>Store colors and sizes once, then reuse them everywhere.</p>
+          <ul class="feature-list">
+            <li>Consistent theme</li>
+            <li>Easy changes</li>
+            <li>Less mistakes</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Mixins</h3>
+          <p>Create reusable style “recipes” like rounded corners and shadows.</p>
+          <ul class="feature-list">
+            <li>Fewer repeated lines</li>
+            <li>Cleaner CSS</li>
+            <li>Flexible parameters</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Nesting</h3>
+          <p>Write styles that match your HTML structure in a clear way.</p>
+          <ul class="feature-list">
+            <li>Readable rules</li>
+            <li>Organized sections</li>
+            <li>Less selector mess</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="example" id="example">
+      <h2>Example</h2>
+      <p class="example-text">This text will be styled using Sass.</p>
+
+      <details class="tip">
+        <summary>Quick tip</summary>
+        <p>Use <strong>lighten()</strong> for soft backgrounds and <strong>darken()</strong> for readable text.</p>
+      </details>
+    </section>
+
+
+    <section class="contact" id="contact" aria-label="Contact form">
+      <h2>Contact</h2>
+      <p class="muted">This is just a UI demo form (no backend).</p>
+
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="name@email.com" required />
+        </div>
+
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="4" placeholder="Say something..." required></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2035 Sass Essentials</p>
+  </footer>
+</body>
+</html>
