@@ -1,0 +1,211 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #111;
+}
+
+/* Header styles */
+header {
+    background-image: url("https://via.placeholder.com/1200x260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 180px;
+}
+
+.header-overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.header-overlay h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.header-overlay p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Main layout */
+main {
+    padding: 220px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Product styles */
+.product {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #000;
+    margin: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.product-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e91e63;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.product p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.product-details {
+    visibility: hidden;
+}
+
+/* Table section */
+.table-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table styles */
+.product-specs {
+    width: 80%;
+    max-width: 850px;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2px solid #000;
+}
+
+.product-specs th,
+.product-specs td {
+    border: 1px solid #bbb;
+    padding: 12px;
+    text-align: center;
+}
+
+.product-specs th {
+    background-color: #222;
+    color: white;
+}
+
+.product-specs tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.product-specs tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.product-specs tr:hover {
+    background-color: lightblue;
+}
+
+/* Contact form */
+.contact-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px;
+}
+
+.contact-form form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form fieldset {
+    border: 1px solid #bbb;
+    padding: 15px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 0 8px 6px;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styles */
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
