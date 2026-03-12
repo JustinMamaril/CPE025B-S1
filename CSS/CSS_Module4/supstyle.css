@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;  /* Light background for the page */
+}
+
+/* Container styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;  /* White background for content containers */
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around containers */
+}
+
+/* Header styles */
+header {
+    background-color: #1a73e8;  /* Bright blue background */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Column styles */
+.column {
+    float: left;
+    width: 30%;
+    margin: 1.66%;
+    background-color: #e3f2fd;  /* Light blue background for columns */
+    padding: 15px;
+    border-radius: 8px;  /* Rounded corners for columns */
+    box-sizing: border-box;  /* Ensures padding doesn't affect width */
+    transition: transform 0.3s ease; /* Smooth transition effect on hover */
+}
+
+.column:hover {
+    transform: translateY(-10px); /* Lifts column up on hover */
+}
+
+/* Column images */
+.column img {
+    width: 100%;  /* Ensure images fit inside the columns */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .column {
+        width: 100%;  /* Full width for columns on small screens */
+        float: none;
+        margin: 0 0 20px 0;  /* Adds spacing between columns on small screens */
+    }
+
+    header {
+        font-size: 28px; /* Smaller font size for header on small screens */
+    }
+}
+
+/* Grid styles */
+.row {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Post styles */
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.post img {
+    width: 50%;  /* Image takes up half of the container */
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.post p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 500px;
+}
+
+/* Text styling for header and post */
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Responsive text sizes */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .post img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
